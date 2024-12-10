@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Photography Portfolio</h1>
+        <p>Explore my collection of captured moments.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="gallery" class="gallery">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 1">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 2">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 3">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 4">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 5">
+        <img src="https://via.placeholder.com/600x400" alt="Photo 6">
+    </section>
+
+    <section id="about" style="padding: 2rem; text-align: center;">
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate photographer who loves capturing the beauty of the world through my lens. From landscapes to portraits, every photo tells a story. Feel free to reach out to me if you'd like to collaborate!</p>
+    </section>
+
+    <section id="contact" style="padding: 2rem; text-align: center;">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Photography Portfolio | Hosted on <a href="https://github.io">GitHub Pages</a></p>
+    </footer>
+</body>
+</html>
