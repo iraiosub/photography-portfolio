@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Photography Portfolio</title>
+    <title>Ira Iosub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,34 +14,35 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
         }
 
         header h1 {
+            font-size: 2rem;
+            font-weight: bold;
             margin: 0;
         }
 
         nav {
-            background-color: #444;
             display: flex;
-            justify-content: center;
-            padding: 0.5rem 0;
+            gap: 1.5rem;
         }
 
         nav a {
-            color: #fff;
             text-decoration: none;
-            margin: 0 1rem;
-            padding: 0.5rem;
-            transition: background 0.3s;
+            font-size: 1rem;
+            color: #333;
+            text-transform: uppercase;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
+            color: #555;
         }
 
         .gallery {
@@ -64,51 +65,6 @@
             transform: scale(1.05);
         }
 
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .modal img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-        }
-
-        .modal:target {
-            display: flex;
-        }
-
-        .modal .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: #fff;
-            color: #333;
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .modal .close-btn:hover {
-            background: #f4f4f4;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -125,16 +81,14 @@
 </head>
 <body>
     <header>
-        <h1>Photography Portfolio</h1>
-        <p>Explore my collection of captured moments.</p>
+        <h1>Ira Iosub</h1>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#exhibitions">Exhibitions</a>
+            <a href="#essay">Essay</a>
+            <a href="#info">Info</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <section id="gallery" class="gallery">
         <a href="#img1"><img src="images/ira_tuscany_21.jpg" alt="Photo 1"></a>
@@ -145,45 +99,8 @@
         <a href="#img6"><img src="https://via.placeholder.com/600x400" alt="Photo 6"></a>
     </section>
 
-    <!-- Modal for each image -->
-    <div id="img1" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/ira_tuscany_21.jpg" alt="Photo 1">
-    </div>
-    <div id="img2" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/ira_tuscany_28.jpg" alt="Photo 2">
-    </div>
-    <div id="img3" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="images/ira_tuscany_35.jpg" alt="Photo 3">
-    </div>
-    <div id="img4" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="https://via.placeholder.com/600x400" alt="Photo 4">
-    </div>
-    <div id="img5" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="https://via.placeholder.com/600x400" alt="Photo 5">
-    </div>
-    <div id="img6" class="modal">
-        <a href="#" class="close-btn">&times;</a>
-        <img src="https://via.placeholder.com/600x400" alt="Photo 6">
-    </div>
-
-    <section id="about" style="padding: 2rem; text-align: center;">
-        <h2>About Me</h2>
-        <p>Hi! I'm a passionate photographer who loves capturing the beauty of the world through my lens. From landscapes to portraits, every photo tells a story. Feel free to reach out to me if you'd like to collaborate!</p>
-    </section>
-
-    <section id="contact" style="padding: 2rem; text-align: center;">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>Follow me on <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
-    </section>
-
     <footer>
-        <p>&copy; 2024 | Hosted on <a href="https://github.io">GitHub Pages</a></p>
+        <p>&copy; 2024 Ira Iosub | Hosted on <a href="https://github.io">GitHub Pages</a></p>
     </footer>
 </body>
 </html>
